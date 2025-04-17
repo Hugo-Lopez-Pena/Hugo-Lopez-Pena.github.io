@@ -22,6 +22,7 @@ Organic synthesis, NMR, ESR, CV, DSC, and TGA.
 on periodic systems and ultrafast laser spectroscopic experiments
 - Computational evaluation of the catalytic activity of boron clusters using DFT
 - Design and construction of a transient absorption spectroscopy setup
+
 **Graduate Research Assistant @ Virginia Commonwealth University (_May 2020 - May 2023_)** 
 - **Quantum Chemical Calculations:**
 Performed DFT, TDDFT, and EOM-CCSD computations of ground and excited states, potential energy surfaces, and thermochemical data for neutral and ionic species of organic and organometallic molecules. Sampled low-energy conformers using CREST/xtb
