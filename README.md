@@ -1,15 +1,18 @@
 # Computational and Experimental Physical Chemist
 
 #### Technical Skills:
-**Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb and NWChem. CREST, pysisyphus, abcluster, and QCxMS
-driver programs using xtb as calculator. Currently learning VASP.
+**Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb, NWChem, and VASP. CREST, pysisyphus, abcluster, and QCxMS
+driver programs using xtb as calculator
+
 **Programming:** Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit‑learn, etc.) and MATLAB. Familiar with LabVIEW
-and Fortran.
+and Fortran
+
 **Miscellaneous:** Linux, Bash scripting, SGE, SLURM, LaTeX, Multiwfn, Chemcraft, IQmol, and ChemDraw. Currently learn‑
-ing AI/ML.
+ing AI/ML
+
 **Experimental:** Operation and troubleshooting of ultrafast pulsed laser systems and mass spectrometers. Design and
 construction of pump‑probe spectroscopy experiments. Construction and maintenance of ultrahigh vacuum systems.
-Organic synthesis, NMR, ESR, CV, DSC, and TGA.
+Organic synthesis, NMR, ESR, CV, DSC, and TGA
 
 ## Education
 - Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)								       		
