@@ -14,9 +14,9 @@ ing AI/ML
 Organic synthesis, NMR, ESR, CV, DSC, and TGA
 
 ## Education
-- Ph.D., Chemistry|Virginia Commonwealth University (_May 2023_)								       		
-- M.S., Chemisty|Universidad Autónoma Metropolitana (_March 2013_)	 			        		
-- B.S., Chemistry|Universidad Autónoma Metropolitana (_April 2010_)
+- Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)
+- M.S., Chemisty | Universidad Autónoma Metropolitana (_March 2013_)
+- B.S., Chemistry | Universidad Autónoma Metropolitana (_April 2010_)
 
 ## Work Experience
 **Postdoctoral Fellow @ Virginia Commonwealth University (_September 2023 - Present_)**
@@ -29,7 +29,7 @@ on periodic systems and ultrafast laser spectroscopic experiments
 - **Quantum Chemical Calculations:**
 Performed DFT, TDDFT, and EOM-CCSD computations of ground and excited states, potential energy surfaces, and thermochemical data for neutral and ionic species of organic and organometallic molecules. Sampled low-energy conformers using CREST/xtb
 - **Reaction Dynamics:**
-Conducted AIMD simulations of fragmentation pathways of organic molecules and analyzed the corresponding trajectories 
+Conducted AIMD simulations of fragmentations in organic molecules and analyzed the corresponding trajectories 
 - **Spectroscopy and Instrumentation:**
 Conducted femtosecond time-resolved mass spectrometry on organic compounds; built UHV instrumentation and transient absorption and laser desorption experimental setups. Used MATLAB for data analysis
 
