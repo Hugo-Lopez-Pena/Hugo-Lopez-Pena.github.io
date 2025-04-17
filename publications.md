@@ -6,8 +6,6 @@ layout: default
 ## Publications
 ***
 
-Publications citing OctaDist.
-
 <ol>
 {% for publi in site.data.publications %}
 
