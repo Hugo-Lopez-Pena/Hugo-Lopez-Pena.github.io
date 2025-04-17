@@ -2,15 +2,40 @@
 layout: default
 ---
 
-## OctaDist
+# Computational and Experimental Physical Chemist
 
-OctaDist (**Octa**hedral **Dist**ortion calculator) 
-is an inorganic chemistry and crystallography program for computing the distortion parameters, 
-such as distance and angle distortions, in coordination complexes. 
-These parameters are usually used for tracking the structural change of the transition metal compounds.
-For example, the distortion in spin-crossover complex increases when the electronics spin-state changes 
-from low-spin to high-spin, and vice versa. OctaDist can also be used to study other kinds of metal complexes 
-such as perovskite and metal-organic frameworks (MOFs).
+### Technical Skills:
+**Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb, NWChem, and VASP. CREST, pysisyphus, abcluster, and QCxMS
+driver programs using xtb as calculator
+
+**Programming:** Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit‑learn, etc.) and MATLAB. Familiar with LabVIEW
+and Fortran
+
+**Miscellaneous:** Linux, Bash scripting, SGE, SLURM, LaTeX, Multiwfn, Chemcraft, IQmol, and ChemDraw. Currently learn‑
+ing AI/ML
+
+**Experimental:** Operation and troubleshooting of ultrafast pulsed laser systems and mass spectrometers. Construction of pump‑probe spectroscopy setups. Construction and maintenance of ultrahigh vacuum systems.
+Organic synthesis, NMR, ESR, CV, DSC, and TGA
+
+## Education
+- Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)
+- M.S., Chemisty | Universidad Autónoma Metropolitana (_March 2013_)
+- B.S., Chemistry | Universidad Autónoma Metropolitana (_April 2010_)
+
+## Work Experience
+**Postdoctoral Fellow @ Virginia Commonwealth University (_September 2023 - Present_)**
+- Study of catalytic materials synthesized by reactive laser ablation in liquid using DFT calculations
+on periodic systems and ultrafast laser spectroscopic experiments
+- Computational evaluation of the catalytic activity of boron clusters using DFT
+- Design and construction of a transient absorption spectroscopy setup
+
+**Graduate Research Assistant @ Virginia Commonwealth University (_May 2020 - May 2023_)** 
+- **Quantum Chemical Calculations:**
+Performed DFT, TDDFT, and EOM-CCSD computations of ground and excited states, potential energy surfaces, and thermochemical data for neutral and ionic species of organic and organometallic molecules. Sampled low-energy conformers using CREST/xtb
+- **Reaction Dynamics:**
+Conducted AIMD simulations of fragmentations in organic molecules and analyzed the corresponding trajectories 
+- **Spectroscopy and Instrumentation:**
+Conducted femtosecond time-resolved mass spectrometry on organic compounds; built UHV instrumentation and transient absorption and laser desorption experimental setups. Used MATLAB for data analysis
 
 ## Further information
 
