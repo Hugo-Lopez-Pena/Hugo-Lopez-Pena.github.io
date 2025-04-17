@@ -10,8 +10,7 @@ and Fortran
 **Miscellaneous:** Linux, Bash scripting, SGE, SLURM, LaTeX, Multiwfn, Chemcraft, IQmol, and ChemDraw. Currently learn‑
 ing AI/ML
 
-**Experimental:** Operation and troubleshooting of ultrafast pulsed laser systems and mass spectrometers. Design and
-construction of pump‑probe spectroscopy experiments. Construction and maintenance of ultrahigh vacuum systems.
+**Experimental:** Operation and troubleshooting of ultrafast pulsed laser systems and mass spectrometers. Construction of pump‑probe spectroscopy setups. Construction and maintenance of ultrahigh vacuum systems.
 Organic synthesis, NMR, ESR, CV, DSC, and TGA
 
 ## Education
