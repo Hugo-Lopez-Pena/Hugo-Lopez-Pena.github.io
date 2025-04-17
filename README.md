@@ -1,6 +1,6 @@
 # Computational and Experimental Physical Chemist
 
-#### Technical Skills:
+### Technical Skills:
 **Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb, NWChem, and VASP. CREST, pysisyphus, abcluster, and QCxMS
 driver programs using xtb as calculator
 
@@ -15,9 +15,9 @@ construction of pump‑probe spectroscopy experiments. Construction and maintena
 Organic synthesis, NMR, ESR, CV, DSC, and TGA
 
 ## Education
-- Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)								       		
-- M.S., Chemisty   | Universidad Autónoma Metropolitana (_March 2013_)	 			        		
-- B.S., Chemistry  | Universidad Autónoma Metropolitana (_April 2010_)
+- Ph.D., Chemistry|Virginia Commonwealth University (_May 2023_)								       		
+- M.S., Chemisty|Universidad Autónoma Metropolitana (_March 2013_)	 			        		
+- B.S., Chemistry|Universidad Autónoma Metropolitana (_April 2010_)
 
 ## Work Experience
 **Postdoctoral Fellow @ Virginia Commonwealth University (_September 2023 - Present_)**
