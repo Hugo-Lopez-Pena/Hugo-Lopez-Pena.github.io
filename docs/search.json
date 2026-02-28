@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "snipets/xtb_ohess_catmos_commented.html",
+    "href": "snipets/xtb_ohess_catmos_commented.html",
+    "title": "",
+    "section": "",
+    "text": "CodeShow All CodeHide All Code\n\n\n\n\nThis code is designed to automate the process of preparing molecules for quantum chemical calculations using XTB, starting from SMILES strings in an Excel file. Here’s a breakdown of what it does:\nData Loading: It reads a CATMoS_TrainingSet_with_ld50_cid_smiles.xlsx Excel file into a pandas DataFrame. It then selects rows starting from the third row (df.iloc[2:]) to process.\nOutput Directory Setup: It creates a base directory named xtb_ohess_catmos to store the results, ensuring it exists before proceeding.\nprocess_smiles Function: This is the core function that handles each molecule:\nIt creates a dedicated subdirectory for each molecule using its ‘CID’ (Compound ID). It defines filenames for the XYZ structure and XTB output within this molecule-specific directory. Duplicate Check: It first checks if the XYZ file for a given molecule already exists. If it does, it skips processing that molecule to avoid redundant work. SMILES to 3D Structure: It takes a SMILES string, converts it into an RDKit molecule object, adds explicit hydrogen atoms, and then generates initial 3D coordinates using the ETKDG algorithm. If 3D coordinate generation fails, it raises an error. Geometry Optimization (UFF): It performs a preliminary geometry optimization using the Universal Force Field (UFF) within RDKit. XYZ File Generation: The optimized 3D structure is then converted into an XYZ format string. Save XYZ: This XYZ content is saved to a structure.xyz file in the molecule’s directory. XTB Execution: Finally, it navigates into the molecule’s directory and executes an XTB command (xtb structure.xyz –ohess) to perform an XTB geometry optimization and Hessian calculation, redirecting the output to optimization.out. Error Handling: It includes a try-except block to catch and report any errors encountered during the processing of a specific SMILES string. Batch Processing Loop: The code then iterates through each row of the loaded DataFrame. For each row, it extracts the SMILES string (from the ‘Canonical_QSARr’ column) and the ‘CID’, and calls the process_smiles function to process that specific molecule.\nIn essence, this script automates the generation of 3D molecular structures from SMILES strings, performs basic geometry optimization, and then uses XTB to perform more accurate quantum chemical optimizations and Hessian calculations for a batch of compounds, organizing the outputs neatly into CID-specific folders\n\n\nCode\n! pip install rdkit\n\n! pip install xtb   # This is not working in Colab but it is not necessary if the notebook is run locally\n\n\n\n\nCode\nimport pandas as pd\nimport os\nfrom rdkit import Chem\nfrom rdkit.Chem import AllChem\nfrom rdkit.Chem.rdmolfiles import MolToXYZBlock\n\n\n\n\nCode\n# Replace \"your_file_name.xlsx\" with the actual path to your Excel file\ndf = pd.read_excel(\"CATMoS_TrainingSet_with_ld50_cid_smiles.xlsx\")\n\n# Load SMILES from Excel file and select a specific range\ndf = pd.read_excel(\"CATMoS_TrainingSet_with_ld50_cid_smiles.xlsx\")\n\n# Select a range of rows (e.g., from row 0 to 8 for 9 molecules)\ndf = df.iloc[2:]  # Adjust the range as needed\n\n# Base directory for output\nbase_output_dir = \"xtb_ohess_catmos\"\nos.makedirs(base_output_dir, exist_ok=True)\n\n# Function to process each SMILES string with its corresponding CID\ndef process_smiles(smiles, cid):\n    try:\n        # Create molecule directory using CID, formatted as an integer\n        mol_dir = os.path.join(base_output_dir, f\"CID_{int(cid)}\")\n        os.makedirs(mol_dir, exist_ok=True)\n\n        # Define filenames within molecule directory\n        xyz_filename = os.path.join(mol_dir, \"structure.xyz\")\n        out_filename = os.path.join(mol_dir, \"output.out\")\n\n        # Check if the XYZ file already exists to avoid overwriting\n        if os.path.exists(xyz_filename):\n            print(f\"Skipping XYZ file creation for CID_{int(cid)} as it already exists.\")\n            return # Skip further processing for this molecule\n\n        # Generate RDKit molecule object\n        mol = Chem.MolFromSmiles(smiles)\n        mol = Chem.AddHs(mol)  # Add explicit hydrogens\n\n        # Generate 3D coordinates\n        if AllChem.EmbedMolecule(mol, AllChem.ETKDG()) != 0:\n            raise ValueError(f\"RDKit failed to generate 3D coordinates for {smiles}\")\n\n        # Optimize geometry using UFF (Universal Force Field)\n        AllChem.UFFOptimizeMolecule(mol)\n\n        # Convert to XYZ format\n        xyz_content = MolToXYZBlock(mol)\n\n        # Save XYZ file\n        with open(xyz_filename, \"w\") as f:\n            f.write(xyz_content)\n\n        print(f\"XYZ file created: {xyz_filename}\")\n\n        # Run XTB optimization inside the molecule directory\n        os.system(f\"cd {mol_dir} && xtb structure.xyz --ohess &gt; optimization.out\")\n\n    except Exception as e:\n        print(f\"Error processing SMILES {smiles} (CID: {cid}): {e}\")\n\n# Apply function to selected SMILES with their CIDs\nfor _, row in df.iterrows():\n    smiles = row[\"Canonical_QSARr\"]\n    cid = row[\"CID\"]\n    process_smiles(smiles, cid)\n\nprint(\"\\nGeometry optimization of this batch is done.\")\n\n\n\n\nCode\nimport os\n\n# List the contents of the base output directory to verify creation\nprint(f\"Contents of '{base_output_dir}':\")\n!ls -R \"{base_output_dir}\""
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "",
+    "section": "Education",
+    "text": "Education\n\nPh.D., Chemistry | Virginia Commonwealth University (May 2023)\nM.S., Chemisty | Universidad Autónoma Metropolitana (March 2013)\nB.S., Chemistry | Universidad Autónoma Metropolitana (April 2010)"
+  },
+  {
+    "objectID": "index.html#work-experience",
+    "href": "index.html#work-experience",
+    "title": "",
+    "section": "Work Experience",
+    "text": "Work Experience\nPostdoctoral Fellow @ Virginia Commonwealth University (September 2023 - Present) - Study of catalytic materials synthesized by reactive laser ablation in liquid using DFT calculations on periodic systems and ultrafast laser spectroscopic experiments - Computational evaluation of the catalytic activity of boron clusters using DFT - Design and construction of a transient absorption spectroscopy setup\nGraduate Research Assistant @ Virginia Commonwealth University (May 2020 - May 2023) - Quantum Chemical Calculations: Performed DFT, TDDFT, and EOM-CCSD computations of ground and excited states, potential energy surfaces, and thermochemical data for neutral and ionic species of organic and organometallic molecules. Sampled low-energy conformers using CREST/xtb - Reaction Dynamics: Conducted AIMD simulations of fragmentations in organic molecules and analyzed the corresponding trajectories - Spectroscopy and Instrumentation: Conducted femtosecond time-resolved mass spectrometry on organic compounds; built UHV instrumentation and transient absorption and laser desorption experimental setups. Used MATLAB for data analysis"
+  },
+  {
+    "objectID": "index.html#further-information",
+    "href": "index.html#further-information",
+    "title": "",
+    "section": "Further information",
+    "text": "Further information\n\nPublications"
+  },
+  {
+    "objectID": "Hugo-Lopez-Pena.github.io.html",
+    "href": "Hugo-Lopez-Pena.github.io.html",
+    "title": "Hugo-Lopez-Pena.github.io",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "Hugo-Lopez-Pena.github.io.html#quarto",
+    "href": "Hugo-Lopez-Pena.github.io.html#quarto",
+    "title": "Hugo-Lopez-Pena.github.io",
+    "section": "",
+    "text": "Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "",
+    "section": "",
+    "text": "Code\nback to homepage"
+  },
+  {
+    "objectID": "publications.html#publications",
+    "href": "publications.html#publications",
+    "title": "",
+    "section": "Publications",
+    "text": "Publications\n\n\n{% for publi in site.data.publications %}\n\n{{ publi.title }}. {{ publi.journal }} [Link]\n\n{% endfor %}\n\nLast update: June 2021\nback to homepage"
+  }
+]

@@ -1,0 +1,24 @@
+project:
+#  title: "Hugo-Lopez-Pena.github.io"
+  type: website
+  output-dir: docs
+
+website:
+  title: "Hugo López Peña"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: snipets/xtb_ohess_catmos_commented.ipynb
+        text: xtb
+      # - href: projects/cheminformatics_project.ipynb
+      #   text: Cheminformatics
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: true
+    code-tools: true
+
+
