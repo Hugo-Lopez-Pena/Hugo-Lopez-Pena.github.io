@@ -4,6 +4,12 @@ layout: default
 
 # Computational and Experimental Physical Chemist
 
+***
+
+[View Publications](./publications.md) | [Interactive Notebook Snippet](./snipets/xtb_ohess_catmos_commented.html)
+
+***
+
 ### Technical Skills:
 **Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb, NWChem, and VASP. CREST, pysisyphus, abcluster, and QCxMS
 driver programs using xtb as calculator

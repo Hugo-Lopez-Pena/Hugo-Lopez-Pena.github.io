@@ -1,20 +1,11 @@
 project:
-#  title: "Hugo-Lopez-Pena.github.io"
-  type: website
-  output-dir: docs
+  type: default
 
-website:
-  title: "Hugo López Peña"
-  navbar:
-    left:
-      - href: index.md
-        text: Home
-      - href: snipets/xtb_ohess_catmos_commented.ipynb
-        text: xtb
+tool:
+  jupyter: python3
 
 format:
   html:
-    theme: cosmo
     toc: true
     code-fold: true
     code-tools: true
