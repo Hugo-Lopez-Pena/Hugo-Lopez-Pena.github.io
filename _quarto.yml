@@ -7,12 +7,10 @@ website:
   title: "Hugo López Peña"
   navbar:
     left:
-      - href: index.qmd
+      - href: index.md
         text: Home
       - href: snipets/xtb_ohess_catmos_commented.ipynb
         text: xtb
-      # - href: projects/cheminformatics_project.ipynb
-      #   text: Cheminformatics
 
 format:
   html:
