@@ -6,7 +6,7 @@ layout: default
 
 ***
 
-[View Publications](./publications.md) | [Interactive Notebook Snippet](./snipets/xtb_ohess_catmos_commented.html)
+[Publications](./publications.md) | [Coding Snippet](./snippets/xtb_ohess.html)
 
 ***
 
