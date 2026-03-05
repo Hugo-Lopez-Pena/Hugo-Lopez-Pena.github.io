@@ -14,38 +14,37 @@ layout: default
 
 ***
 
-### Technical Skills:
-**Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb, NWChem, and VASP. CREST, pysisyphus, abcluster, and QCxMS
+## Technical Skills:
+**Quantum chemistry software:** Gaussian, Q‑Chem, ORCA, xtb, NWChem, and VASP. CREST, abcluster, and QCxMS
 driver programs using xtb as calculator
 
 **Programming:** Python (Pandas, NumPy, Matplotlib, Seaborn, Scikit‑learn, etc.) and MATLAB. Familiar with LabVIEW
 and Fortran
 
-**Miscellaneous:** Linux, Bash scripting, SGE, SLURM, LaTeX, Multiwfn, Chemcraft, IQmol, and ChemDraw. Currently learn‑
-ing AI/ML
+**Miscellaneous:** Linux, Bash scripting, SGE, SLURM, LaTeX, Multiwfn, Chemcraft, Jmol, and VESTA. Learning AI/ML
 
-**Experimental:** Operation and troubleshooting of ultrafast pulsed laser systems and mass spectrometers. Construction of pump‑probe spectroscopy setups. Construction and maintenance of ultrahigh vacuum systems.
+**Experimental:** Operation and troubleshooting of ultrafast pulsed laser systems and mass spectrometers. Design and
+construction of pump‑probe spectroscopy setups. Construction and maintenance of ultrahigh vacuum systems.
 Organic synthesis, NMR, ESR, CV, DSC, and TGA
 
 ## Education
-- Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)
-- M.S., Chemisty | Universidad Autónoma Metropolitana (_March 2013_)
-- B.S., Chemistry | Universidad Autónoma Metropolitana (_April 2010_)
+Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)
+M.S., Chemisty | Universidad Autónoma Metropolitana (_March 2013_)
+B.S., Chemistry | Universidad Autónoma Metropolitana (_April 2010_)
 
 ## Work Experience
 **Postdoctoral Fellow @ Virginia Commonwealth University (_September 2023 - Present_)**
-- Study of catalytic materials synthesized by reactive laser ablation in liquid using DFT calculations
-on periodic systems and ultrafast laser spectroscopic experiments
-- Computational evaluation of the catalytic activity of boron clusters using DFT
-- Design and construction of a transient absorption spectroscopy setup
+- DFT evaluation of boron clusters as catalysts for hydrogen generation
+- Study of catalytic materials for CO<sub>2</sub> reduction using periodic DFT calculations and ultrafast laser experiments
+- Construction of a femtosecond white light source for transient absorption experiments
 
 **Graduate Research Assistant @ Virginia Commonwealth University (_May 2020 - May 2023_)** 
 - **Quantum Chemical Calculations:**
-Performed DFT, TDDFT, and EOM-CCSD computations of ground and excited states, potential energy surfaces, and thermochemical data for neutral and ionic species of organic and organometallic molecules. Sampled low-energy conformers using CREST/xtb
+Computed ground and excited state energies of organic molecules using DFT/TDDFT and EOM-CCSD methods. Investigated fragmentation pathways of organic and organometallic molecules using DFT. Sampled low-energy conformers using CREST/xtb
 - **Reaction Dynamics:**
-Conducted AIMD simulations of fragmentations in organic molecules and analyzed the corresponding trajectories 
+Conducted AIMD simulations of organic molecules and analyzed the resulting trajectories 
 - **Spectroscopy and Instrumentation:**
-Conducted femtosecond time-resolved mass spectrometry on organic compounds; built UHV instrumentation and transient absorption and laser desorption experimental setups. Used MATLAB for data analysis
+Conducted femtosecond time-resolved mass spectrometry of organic molecules and mixtures. Contributed to the assembly of an ultra-high vacuum chamber for laser desorption and post-ionization of low-volatility molecules and an integrated TOF mass spectrometer.
 
 ## Further information
 
