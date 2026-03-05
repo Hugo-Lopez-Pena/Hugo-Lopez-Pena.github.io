@@ -6,9 +6,11 @@ layout: default
 
 ***
 
-[Publications](./publications.md)  
-[Code Snippet/PubChem toxicity data extraction](./snippets/LD50.html)    
-[Code Snippet/GFN2-xTB optimization from SMILES](./snippets/xtb_ohess.html)
+[Publications](./publications.md)
+
+[Code Snippet/PubChem toxicity data extraction](./snippets/LD50.html)     
+[Code Snippet/MD analysis using MDTraj](./snippets/MD_analysis_MDTraj.html)  
+[Code Snippet/GFN2-xTB optimization from SMILES](./snippets/xtb_ohess.html)  
 
 ***
 
