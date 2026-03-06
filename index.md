@@ -28,6 +28,7 @@ construction of pump‑probe spectroscopy setups. Construction and maintenance o
 Organic synthesis, NMR, ESR, CV, DSC, and TGA
 
 ## Education
+  
 Ph.D., Chemistry | Virginia Commonwealth University (_May 2023_)  
   
 M.S., Chemisty | Universidad Autónoma Metropolitana (_March 2013_)  
